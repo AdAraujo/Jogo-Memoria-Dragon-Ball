@@ -3,6 +3,13 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 
+
+const button =document.querySelector('button')
+button.addEventListener('click', function(){
+    const audio = document.querySelector('audio')
+    audio.play()
+})
+
 function flipCard(){
     if(lockBoard)return;
     if(this === firstCard) return;
